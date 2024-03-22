@@ -1,0 +1,83 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    color: yellow;
+    font-style: italic;
+    font-weight: bold;
+    animation-name: color-fonts;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.box{
+    display: flex;
+    width: 100%;
+}
+
+.mario-introduction{
+    width: 200px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position-y: 100px;
+    animation-name: movements;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform: scale(0.5);
+    display: flex;
+}
+
+.tubo{
+    position: absolute;
+    right: 0%;
+}
+
+@keyframes movements {
+    0%{
+        background-image: url('../img/mario01.png');
+        transform: translateX(0px);
+    }
+    20%{
+        background-image: url('../img/mario02.png');
+        transform: translateX(150px);
+    }
+    40%{
+        background-image: url('../img/mario03.png');
+        transform: translateX(250px);
+    }
+    60%{
+        background-image: url('../img/mario04.png');
+        transform: translateX(350px);
+    }
+    80%{
+        background-image: url('../img/mario02.png');
+        transform: translateX(550px);
+    }
+    100%{
+        background-image: url('../img/mario03.png');
+        transform: translateX(850px);
+    }
+    
+}
+
+
+@keyframes color-fonts {
+    0%{
+        color: yellow;
+    }
+    30%{
+        color: orange;
+    }
+    50%{
+        color: red;
+    }
+    0%{
+        color: pink;
+    }
+}
