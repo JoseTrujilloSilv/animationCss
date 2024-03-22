@@ -14,7 +14,7 @@ div {
 }
 ````````````````````````````````````````````````````````
 
-- animation duration: indica la duración de la animación,
+- animation-duration: indica la duración de la animación,
 ex:
 
 ````````````````````````````````````````````````````````
